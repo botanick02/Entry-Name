@@ -4,11 +4,13 @@ using System.Text.Encodings.Web;
 
 namespace Entry_Name.Controllers
 {
-    public class EntryHelloController : Controller
+    public class EntryNameController : Controller
     {
-        public IActionResult Index()
+         
+
+        public string Index()
         {
-            return View();
+            return "This is my default action...";
         }
     }
 }
