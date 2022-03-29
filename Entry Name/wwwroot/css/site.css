@@ -37,6 +37,9 @@ h3{
     border: none;
     padding: 10px;
 }
+textarea:focus, input:focus {
+    outline: none;
+}
 .NameInputWrapper input[type=submit] {
     background-color: #415a77;
     border: none;
@@ -50,10 +53,10 @@ h3{
     margin: 0;
     border: 2px solid #415a77;
 }
-    .NameInputWrapper input[type=submit]:focus {
-        background-color: #1b263b;
-        transition: 0.2s;
-    }
+.NameInputWrapper input[type=submit]:focus {
+    background-color: #1b263b;
+    transition: 0.2s;
+}
 .NameInputWrapper form {
     display: flex;
     margin: 10px 0 0;

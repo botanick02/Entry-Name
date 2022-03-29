@@ -6,16 +6,14 @@ namespace Entry_Name.Controllers
 {
     public class EntryNameController : Controller
     {
-
-
         public IActionResult Index()
         {
             return View();
         }
-
-        public string HelloName(string name)
+        public IActionResult HelloName(string name)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}");
+            ViewData["Name"] = name;
+            return View();
         }
     }
 }
