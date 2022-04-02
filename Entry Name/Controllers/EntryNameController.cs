@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
-
+using Entry_Name.Models;
 
 namespace Entry_Name.Controllers
 {
     public class EntryNameController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }
-        public IActionResult HelloName(string name)
+        [HttpPost]
+        public ViewResult HelloName(Person person)
         {
-            ViewData["Name"] = name;
-            return View();
+            return View("HelloName", person);
         }
     }
 }

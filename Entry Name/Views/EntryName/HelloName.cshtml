@@ -1,13 +1,8 @@
-﻿@{
+﻿@model Entry_Name.Models.Person
+@{
 	ViewData["Title"] = "EntryName by botanick02";	
 }
 
 <div class="NameInputWrapper">
-	@if(String.IsNullOrEmpty(@ViewData["Name"] as string)){
-		<h3>Hello!</h3>
-	}
-	else
-	{
-		<h3>Hello, @ViewData["Name"]!</h3>
-	}
+	<h3>Hello, @Model.Name!</h3>
 </div>
