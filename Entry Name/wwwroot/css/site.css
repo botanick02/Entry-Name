@@ -57,7 +57,7 @@ textarea:focus, input:focus {
     background-color: #1b263b;
     transition: 0.2s;
 }
-.NameInputWrapper form {
+.NameInputWrapper .input {
     display: flex;
     margin: 10px 0 0;
 }
