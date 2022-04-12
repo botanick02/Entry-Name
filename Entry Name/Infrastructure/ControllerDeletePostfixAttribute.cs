@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace Entry_Name.Infrastructure
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public class ControllerDeletePostfixAttribute : Attribute, IControllerModelConvention
+    public class ControllerDeletePostfixAttribute :  IControllerModelConvention
     {
         public string Postfix { get; }
         public ControllerDeletePostfixAttribute(string name)

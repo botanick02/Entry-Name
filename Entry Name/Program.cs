@@ -6,7 +6,6 @@ builder.Services.AddMvc().AddMvcOptions(option => {
     option.Conventions.Add(new ControllerDeletePostfixAttribute("Danyil"));
 });
 
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
